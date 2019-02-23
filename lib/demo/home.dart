@@ -20,7 +20,7 @@ class _DemoHomeState extends State<DemoHome> {
     'qrcode': '二维码'
   };
   final TextStyle _listItemTitleStyle =
-      TextStyle(fontSize: 18.0, color: Colors.red);
+      TextStyle(fontSize: 18.0);
 
   @override
   Widget build(BuildContext context) {
