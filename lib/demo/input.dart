@@ -20,11 +20,12 @@ class _InputState extends State<InputRoute> {
               children: <Widget>[
                 _createLoginFormsWidget(),
                 _createFocusNodeWidget(),
-                FlatButton(
+                Divider(),
+                RaisedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, 'form_route');
                   },
-                  child: Text('Form'),
+                  child: Text('表单'),
                 )
               ],
             )));
@@ -36,36 +37,44 @@ class _InputState extends State<InputRoute> {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        TextField(
-          decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: '账号:',
-              hintText: '输入您的账号。',
-              prefixIcon: Icon(Icons.phone)),
-          autofocus: false,
-          maxLines: 1,
-          maxLength: 20,
-          maxLengthEnforced: false,
-          textInputAction: TextInputAction.search,
-          keyboardType: TextInputType.url,
-          onChanged: (v) {
-            print('onChange: $v');
-          },
-          onSubmitted: (v) {
-            print('onSubmitted: $v');
-          },
-          onEditingComplete: () {
-            print('onEditingComplete: ');
-          },
+        Padding(
+            padding: const EdgeInsets.only(bottom: 18.0),
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+              ),
+            )),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 18.0),
+          child: TextField(
+            decoration: InputDecoration(
+                border: OutlineInputBorder(), labelText: 'labelText：'),
+          ),
         ),
-        TextField(
-          obscureText: true,
-          decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: '密码:',
-              hintText: '输入您的登录密码。',
-              prefixIcon: Icon(Icons.lock)),
-        )
+        Padding(
+          padding: const EdgeInsets.only(bottom: 18.0),
+          child: TextField(
+            decoration: InputDecoration(labelText: 'labelText：'),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 18.0),
+          child: TextField(
+            decoration: InputDecoration(icon: Icon(Icons.person)),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 18.0),
+          child: TextField(
+            decoration: InputDecoration(prefixIcon: Icon(Icons.person_add)),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 18.0),
+          child: TextField(
+            decoration: InputDecoration(suffixIcon: Icon(Icons.person)),
+          ),
+        ),
       ],
     );
   }
