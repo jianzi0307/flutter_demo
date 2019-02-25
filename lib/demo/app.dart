@@ -8,6 +8,7 @@ import 'icon.dart';
 import 'switch.dart';
 import 'qrcode.dart';
 import 'form.dart';
+import 'container.dart';
 
 class App extends StatefulWidget {
   const App({Key key}) : super(key: key);
@@ -34,6 +35,7 @@ class _AppState extends State<App> {
         'input_route': (context) => InputRoute(),
         'qrcode_route': (context) => QrcodeRoute(),
         'form_route': (context) => FormRoute(),
+        'container_route': (context) => ContainerRoute(),
       },
     );
   }

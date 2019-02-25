@@ -17,10 +17,10 @@ class _DemoHomeState extends State<DemoHome> {
     'icon': 'IconFont',
     'switch': '单选框和复选框',
     'input': '输入框和表单',
-    'qrcode': '二维码'
+    'qrcode': '二维码',
+    'container': '容器'
   };
-  final TextStyle _listItemTitleStyle =
-      TextStyle(fontSize: 18.0);
+  final TextStyle _listItemTitleStyle = TextStyle(fontSize: 18.0);
 
   @override
   Widget build(BuildContext context) {
