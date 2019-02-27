@@ -9,6 +9,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const Map<String, String> _gridsItems = {
+      'scaffold': '脚手架',
       'text': '文本',
       'button': '按钮',
       'image': '图片',
@@ -16,8 +17,17 @@ class App extends StatelessWidget {
       'switch': '单选框和复选框',
       'input': '输入框和表单',
       'qrcode': '二维码',
-      'scaffold': '脚手架',
-      'network': '网络'
+      'network': '网络',
+      'card': '卡片',
+      'dialog': '弹窗',
+      'list': '列表',
+      'tab': '选项卡',
+      'menu': '菜单',
+      'picker': '选择器',
+      'panel': '面板',
+      'progress': '进度条',
+      'slider': 'Slider',
+      'bar': 'Bar'
     };
 
     return MaterialApp(
