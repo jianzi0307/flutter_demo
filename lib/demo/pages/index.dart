@@ -9,3 +9,4 @@ export 'qrcode.dart';
 export 'scaffold.dart';
 export 'switch.dart';
 export 'text.dart';
+export 'splash.dart';

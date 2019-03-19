@@ -10,6 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     const Map<String, String> _gridsItems = {
       'scaffold': '脚手架',
+      'splash': '启动页',
       'text': '文本',
       'button': '按钮',
       'image': '图片',
@@ -38,6 +39,7 @@ class App extends StatelessWidget {
         gridItems: _gridsItems,
       ),
       routes: {
+        'splash_route': (context) => SplashRoute(),
         'text_route': (context) => TextRoute(),
         'button_route': (context) => ButtonRoute(),
         'image_route': (context) => ImageRoute(),
